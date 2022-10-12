@@ -251,8 +251,6 @@ header
 .background-header .logo,
 .background-header .main-nav .nav li a {
   color: #1e1e1e!important;
-  width: 100px;
-  height: 100px;
 }
 
 .background-header .main-nav .nav li:hover a {
