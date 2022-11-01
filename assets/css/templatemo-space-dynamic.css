@@ -319,11 +319,6 @@ header
     transition: all 0.3s ease 0s;
 }
 
-.site_left_img {
-  position: absolute;
-  left: 3%;
-  top: 0;
-}
 
 .logo h4 span {
   color: #fe3f40;
