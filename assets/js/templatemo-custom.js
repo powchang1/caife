@@ -228,7 +228,6 @@
     $(".chat-box").toggle('scale');
   })
   
-})
 	
 	
 	
