@@ -1883,41 +1883,41 @@ responsive
 /* Form Section
 -----------------------*/
 /*custom font*/
-@import url(https://fonts.googleapis.com/css?family=Montserrat);
-
-/*basic reset*/
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    height: 100%;
-    background: #6441A5; /* fallback for old browsers */
-    background: -webkit-linear-gradient(to left, #6441A5, #2a0845); /* Chrome 10-25, Safari 5.1-6 */
-}
-
-body {
-    font-family: montserrat, arial, verdana;
-    background: transparent;
+/*Background color*/
+#grad1 {
+    background-color: : #9C27B0;
+    background-image: linear-gradient(120deg, #FF4081, #81D4FA);
 }
 
 /*form styles*/
 #msform {
     text-align: center;
     position: relative;
-    margin-top: 30px;
+    margin-top: 20px;
+}
+
+#msform fieldset .form-card {
+    background: white;
+    border: 0 none;
+    border-radius: 0px;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+    padding: 20px 40px 30px 40px;
+    box-sizing: border-box;
+    width: 94%;
+    margin: 0 3% 20px 3%;
+
+    /*stacking fieldsets above each other*/
+    position: relative;
 }
 
 #msform fieldset {
     background: white;
     border: 0 none;
-    border-radius: 0px;
-    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
-    padding: 20px 30px;
+    border-radius: 0.5rem;
     box-sizing: border-box;
-    width: 80%;
-    margin: 0 10%;
+    width: 100%;
+    margin: 0;
+    padding-bottom: 20px;
 
     /*stacking fieldsets above each other*/
     position: relative;
@@ -1928,160 +1928,200 @@ body {
     display: none;
 }
 
-/*inputs*/
+#msform fieldset .form-card {
+    text-align: left;
+    color: #9E9E9E;
+}
+
 #msform input, #msform textarea {
-    padding: 15px;
-    border: 1px solid #ccc;
+    padding: 0px 8px 4px 8px;
+    border: none;
+    border-bottom: 1px solid #ccc;
     border-radius: 0px;
-    margin-bottom: 10px;
+    margin-bottom: 25px;
+    margin-top: 2px;
     width: 100%;
     box-sizing: border-box;
     font-family: montserrat;
     color: #2C3E50;
-    font-size: 13px;
+    font-size: 16px;
+    letter-spacing: 1px;
 }
 
 #msform input:focus, #msform textarea:focus {
     -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
-    border: 1px solid #ee0979;
+    border: none;
+    font-weight: bold;
+    border-bottom: 2px solid skyblue;
     outline-width: 0;
-    transition: All 0.5s ease-in;
-    -webkit-transition: All 0.5s ease-in;
-    -moz-transition: All 0.5s ease-in;
-    -o-transition: All 0.5s ease-in;
 }
 
-/*buttons*/
+/*Blue Buttons*/
 #msform .action-button {
     width: 100px;
-    background: #ee0979;
+    background: skyblue;
     font-weight: bold;
     color: white;
     border: 0 none;
-    border-radius: 25px;
+    border-radius: 0px;
     cursor: pointer;
     padding: 10px 5px;
     margin: 10px 5px;
 }
 
 #msform .action-button:hover, #msform .action-button:focus {
-    box-shadow: 0 0 0 2px white, 0 0 0 3px #ee0979;
+    box-shadow: 0 0 0 2px white, 0 0 0 3px skyblue;
 }
 
+/*Previous Buttons*/
 #msform .action-button-previous {
     width: 100px;
-    background: #C5C5F1;
+    background: #616161;
     font-weight: bold;
     color: white;
     border: 0 none;
-    border-radius: 25px;
+    border-radius: 0px;
     cursor: pointer;
     padding: 10px 5px;
     margin: 10px 5px;
 }
 
 #msform .action-button-previous:hover, #msform .action-button-previous:focus {
-    box-shadow: 0 0 0 2px white, 0 0 0 3px #C5C5F1;
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #616161;
 }
 
-/*headings*/
+/*Dropdown List Exp Date*/
+select.list-dt {
+    border: none;
+    outline: 0;
+    border-bottom: 1px solid #ccc;
+    padding: 2px 5px 3px 5px;
+    margin: 2px;
+}
+
+select.list-dt:focus {
+    border-bottom: 2px solid skyblue;
+}
+
+/*The background card*/
+.card {
+    z-index: 0;
+    border: none;
+    border-radius: 0.5rem;
+    position: relative;
+}
+
+/*FieldSet headings*/
 .fs-title {
-    font-size: 18px;
-    text-transform: uppercase;
+    font-size: 25px;
     color: #2C3E50;
     margin-bottom: 10px;
-    letter-spacing: 2px;
     font-weight: bold;
-}
-
-.fs-subtitle {
-    font-weight: normal;
-    font-size: 13px;
-    color: #666;
-    margin-bottom: 20px;
+    text-align: left;
 }
 
 /*progressbar*/
 #progressbar {
     margin-bottom: 30px;
     overflow: hidden;
-    /*CSS counters to number the steps*/
-    counter-reset: step;
+    color: lightgrey;
+}
+
+#progressbar .active {
+    color: #000000;
 }
 
 #progressbar li {
     list-style-type: none;
-    color: white;
-    text-transform: uppercase;
-    font-size: 9px;
-    width: 33.33%;
+    font-size: 12px;
+    width: 25%;
     float: left;
     position: relative;
-    letter-spacing: 1px;
 }
 
+/*Icons in the ProgressBar*/
+#progressbar #account:before {
+    font-family: FontAwesome;
+    content: "\f023";
+}
+
+#progressbar #personal:before {
+    font-family: FontAwesome;
+    content: "\f007";
+}
+
+#progressbar #payment:before {
+    font-family: FontAwesome;
+    content: "\f09d";
+}
+
+#progressbar #confirm:before {
+    font-family: FontAwesome;
+    content: "\f00c";
+}
+
+/*ProgressBar before any progress*/
 #progressbar li:before {
-    content: counter(step);
-    counter-increment: step;
-    width: 24px;
-    height: 24px;
-    line-height: 26px;
+    width: 50px;
+    height: 50px;
+    line-height: 45px;
     display: block;
-    font-size: 12px;
-    color: #333;
-    background: white;
-    border-radius: 25px;
+    font-size: 18px;
+    color: #ffffff;
+    background: lightgray;
+    border-radius: 50%;
     margin: 0 auto 10px auto;
+    padding: 2px;
 }
 
-/*progressbar connectors*/
+/*ProgressBar connectors*/
 #progressbar li:after {
     content: '';
     width: 100%;
     height: 2px;
-    background: white;
+    background: lightgray;
     position: absolute;
-    left: -50%;
-    top: 9px;
-    z-index: -1; /*put it behind the numbers*/
+    left: 0;
+    top: 25px;
+    z-index: -1;
 }
 
-#progressbar li:first-child:after {
-    /*connector not needed before the first step*/
-    content: none;
-}
-
-/*marking active/completed steps green*/
-/*The number of the step and the connector before it = green*/
+/*Color number of the step and the connector before it*/
 #progressbar li.active:before, #progressbar li.active:after {
-    background: #ee0979;
-    color: white;
+    background: skyblue;
 }
 
-
-/* Not relevant to this form */
-.dme_link {
-    margin-top: 30px;
-    text-align: center;
-}
-.dme_link a {
-    background: #FFF;
-    font-weight: bold;
-    color: #ee0979;
-    border: 0 none;
-    border-radius: 25px;
-    cursor: pointer;
-    padding: 5px 25px;
-    font-size: 12px;
+/*Imaged Radio Buttons*/
+.radio-group {
+    position: relative;
+    margin-bottom: 25px;
 }
 
-.dme_link a:hover, .dme_link a:focus {
-    background: #C5C5F1;
-    text-decoration: none;
+.radio {
+    display:inline-block;
+    width: 204;
+    height: 104;
+    border-radius: 0;
+    background: lightblue;
+    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
+    box-sizing: border-box;
+    cursor:pointer;
+    margin: 8px 2px; 
 }
 
+.radio:hover {
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
 
+.radio.selected {
+    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
+}
 
+/*Fit image in bootstrap div*/
+.fit-image{
+    width: 100%;
+    object-fit: cover;
+}
 
