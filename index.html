@@ -280,48 +280,33 @@ https://templatemo.com/tm-562-space-dynamic
 <!--  Form section -->
     <section>
         <!-- Container -->
-        <div class="container">
-            <!-- Row -->
-            <div class="row justify-content-between align-items-center">                
-	     
-	  <form id="regForm" action="/action_page.php">
-	  <h1>Register:</h1>
-	  <!-- One "tab" for each step in the form: -->
-	  <div class="tab">Name:
-	    <p><input placeholder="First name..." oninput="this.className = ''" name="fname"></p>
-	    <p><input placeholder="Last name..." oninput="this.className = ''" name="lname"></p>
-	  </div>
-	  <div class="tab">Contact Info:
-	    <p><input placeholder="E-mail..." oninput="this.className = ''" name="email"></p>
-	    <p><input placeholder="Phone..." oninput="this.className = ''" name="phone"></p>
-	  </div>
-	  <div class="tab">Birthday:
-	    <p><input placeholder="dd" oninput="this.className = ''" name="dd"></p>
-	    <p><input placeholder="mm" oninput="this.className = ''" name="nn"></p>
-	    <p><input placeholder="yyyy" oninput="this.className = ''" name="yyyy"></p>
-	  </div>
-	  <div class="tab">Login Info:
-	    <p><input placeholder="Username..." oninput="this.className = ''" name="uname"></p>
-	    <p><input placeholder="Password..." oninput="this.className = ''" name="pword" type="password"></p>
-	  </div>
-	  <div style="overflow:auto;">
-	    <div style="float:right;">
-	      <button type="button" id="prevBtn" onclick="nextPrev(-1)">Previous</button>
-	      <button type="button" id="nextBtn" onclick="nextPrev(1)">Next</button>
-	    </div>
-	  </div>
-	  <!-- Circles which indicates the steps of the form: -->
-	  <div style="text-align:center;margin-top:40px;">
-	    <span class="step"></span>
-	    <span class="step"></span>
-	    <span class="step"></span>
-	    <span class="step"></span>
-	  </div>
-	</form>
-    
+	  <div class="container d-flex align-items-center min-vh-100">
+	   <div class="row g-0 justify-content-center">
+	      <!-- TITLE -->
+	      <div class="col-lg-4 offset-lg-1 mx-0 px-0">
+		 <div id="title-container">
+		      <img class="covid-image" src="assets/images/covid-check.png">
+		      <h2>COVID-19</h2>
+		      <h3>Self Checker Form</h3>
+		      <p>A clinical assessment multi-step form that will assist individuals on deciding when to seek testing or medical care if they suspect they or someone they know has contracted COVID-19 or has come into close contact with someone who has COVID-19</p>
+		 </div>
+	      </div><!-- End Title -->
+		   
+	      <!-- FORMS -->
+	      <div class="col-lg-7 mx-0 px-0">
+		  <div class="progress">
+     		  <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 0%"></div>
+   		  </div>
+                 <div id="qbox-container">
+		      <form class="needs-validation" id="form-wrapper" method="post" name="form-wrapper" novalidate>
+			 <!-- STEPS HERE -->
+		      </form>
+   		</div>     
+	      </div><!-- End of Form -->
+	   </div><!-- End of row -->
+	</div><!-- End of Container -->
 
-            </div><!-- End of Row -->           
-        </div><!-- End of Container-->      
+     
     </section><!-- End of Section -->
 	
    <br />
