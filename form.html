@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -9,7 +8,6 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 
     <title>CAiFE Meta-Learning Chatbot</title>
@@ -18,306 +16,524 @@
     <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
 
     <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
     <link rel="stylesheet" href="assets/css/fontawesome.css">
     <link rel="stylesheet" href="assets/css/templatemo-space-dynamic.css">
     <link rel="stylesheet" href="assets/css/animated.css">
     <link rel="stylesheet" href="assets/css/owl.css">
        <!-- Bootstrap + Creative Design main styles -->
-	<link rel="stylesheet" href="assets/css/creative-design.css">
+    <link rel="stylesheet" href="assets/css/creative-design.css">
 <!--
     
 TemplateMo 562 Space Dynamic
-
 https://templatemo.com/tm-562-space-dynamic
-
 -->
   </head>
 
+<body>
 
-
-
-<div class="info">
-  <h1>Chatbot API Request Form</h1>
-  <span>
-    Made with
-    <i class="fa fa-beer"></i>
-    by CAiFE Team</a>
-    <div class="spoilers">
-      This is a form to guide you getting the right API configuration for your customized Chatbot API.</a> 
+  <!-- ***** Preloader Start ***** -->
+  <div id="js-preloader" class="js-preloader">
+    <div class="preloader-inner">
+      <span class="dot"></span>
+      <div class="dots">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
     </div>
-  </span>
-</div>
-
-
-
-<!-- Modal -info -->
-<div class="container">
-<div id="modal-3" class="modal" data-modal-effect="slide-top">
-  <div class="modal-content">
-    <h2 class="fs-title">Score Index</h2>
-    <h3 class="fs-subtitle">Getting the most out of your data</h3>
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce convallis consectetur ligula. Morbi dapibus tellus a ipsum sollicitudin aliquet. Phasellus id est lacus. Pellentesque a elementum velit, a tempor nulla. Mauris mauris lectus, tincidunt et purus rhoncus, eleifend convallis turpis. Nunc ullamcorper bibendum diam, vitae tempus dolor hendrerit iaculis. Phasellus tellus elit, feugiat vel mi et, euismod varius augue. Nulla a porttitor sapien. Donec vestibulum ac nisl sed bibendum. Praesent neque ipsum, commodo eget venenatis vel, tempus sit amet ante. Curabitur vel odio eget urna dapibus imperdiet sit amet eget felis. Vestibulum eros velit, posuere a metus eget, aliquam euismod purus. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos.</p>
-    <input type="button" name="next" class="next action-button modal-close" value="Got it!">
   </div>
+  <!-- ***** Preloader End ***** -->
+
+  <!-- ***** Header Area Start ***** -->
+  <header class="header-area header-sticky wow slideInDown" data-wow-duration="0.75s" data-wow-delay="0s">
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+<!--           <nav class="main-nav navbar navbar-light bg-light fixed-top py-md-2"> -->
+	    <nav class="main-nav">
+            <!-- ***** Logo Start ***** -->
+            <a href="index.html" class="logo">
+            <img src="assets/images/caife-2-logo-small-gm.png" alt="" title="">
+            </a>
+            <!-- ***** Logo End ***** -->
+            <!-- ***** Menu Start ***** -->
+            <ul class="nav justify-content-center">
+	    
+              <li class="scroll-to-section"><a href="#top" class="active">Home</a></li>
+              <li class="scroll-to-section"><a href="#about">Features</a></li>
+              <li class="scroll-to-section"><a href="#services">How</a></li>
+              <li class="scroll-to-section"><a href="#portfolio">Technology</a></li>
+              <li class="scroll-to-section"><a href="#team">About Us</a></li> 
+<!--               <li class="scroll-to-section"><a href="#contact">Project Team</a></li>  -->
+              <li class="scroll-to-section"><div class="main-red-button"><a href="#contact">Get My Chatbot</a></div></li> 
+            </ul>        
+            <a class='menu-trigger'>
+                <span>Menu</span>
+            </a>
+            <!-- ***** Menu End ***** -->
+          </nav>
+        </div>
+      </div>
+    </div>
+  </header>
+  <!-- ***** Header Area End ***** -->
+
+ 
+
+	<!-- Marketing Section -->
+    <section>
+        <!-- Container -->
+        <div class="container">
+            <!-- Row -->
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-6">
+                    <div class="img-wrapper">
+                        <div class="after"></div>
+                        <img src="assets/images/Section-1.png" class="w-100" alt="About us">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <h4 class="title mb-3">Customize your bot UI and replies and stay engaging and brand-compliant</h4>
+                    
+                    <p>Keep customers engaged with varied bot responses such as text, images, carousels, quick reply buttons, etc. Customize your bot’s look and feel to represent your brand.</p>
+                    <p class="text-muted">Get a 360° view of your customers by integrating Sprinklr with popular sales, marketing, and automation tools.!</p>
+                </div>
+            </div><!-- End of Row -->           
+        </div><!-- End of Container-->      
+    </section><!-- End of Section -->   
+  <br />
+  <br />
+  <br />
+	
+	
+	
+	
+	
+  <!-- About Business Section -->
+    <section id="about">
+        <!-- Container -->
+        <div class="container">
+            <!-- About wrapper -->
+            <div class="about-wrapper">
+                <div class="after"><h1>About Us</h1></div>
+                <div class="content">
+                    <h5 class="title mb-3">Democratizing AI through NLP</h5>
+                    <!-- row -->
+                    <div class="row">
+                        <div class="col">
+                            <p>Conversational AI, aka Chatbot, is an essential business driver. By 2027, chatbots expected to be the  primary customer service channel.</p>
+                            <p>Chatbot instantaneously offer information, personalized, across devices</p>                        
+                            <p>Business need affordable 24x7x365-available error-free service, at scale. Two-thirds of SMBs report competing on customer experience. Lack of chatbot will be a definite disadvantage - imagine business without a website?</p>
+                            <p>Technology complexity, people cost, lack of training data major barriers for SMB.</p>
+                        </div>
+                        <div class="col">
+                            <p>Large market opportunity - TAM (Total Addressable Market) estimated to be huge, about $41B by 2030, CAGR (Cumulative Aggregate Growth Rate) of about 23% from 2022 to 2030. CAiFE creates a Small Medium Business friendly chatbot built on state-of-the-art technology.</p>
+                            <p>Allows SMBs to compete on customer experience with large businesses through (1) Fast deployment: few hours Vs weeks for custom chatbots (2) Easy integration: a SMB-specific URL to embed in the portal. (3) Low OPEX with built-in compliance and support.</p>
+                        </div>
+                    </div><!-- End of Row -->                   
+<!--                     <a href="javascript:void(0)">Read More...</a> -->
+                </div>
+            </div><!-- End of About Wrapper -->         
+        </div>  <!-- End of Container-->        
+     </section><!--End of Section -->
+  
+	<br />
+	<br />
+	<br />
+	
+	
+<!--==========================
+   Process registration Section
+  ============================-->
+ <section>
+        <!-- Container -->
+        <div class="container">
+            <!-- Row -->
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-10">
+                    <div class="img-wrapper">
+                        <div class="after"></div>
+                        <img src="assets/images/CAiFE-Registration-Flow.png" class="w-100" alt="About us">
+                    </div>
+                </div>
+<!--                 <div class="col-md-5">
+                    <h4 class="title mb-3">Customize your bot UI and replies and stay engaging and brand-compliant</h4>
+                    
+                    <p>Keep customers engaged with varied bot responses such as text, images, carousels, quick reply buttons, etc. Customize your bot’s look and feel to represent your brand.</p>
+                    <p class="text-muted">Get a 360° view of your customers by integrating Sprinklr with popular sales, marketing, and automation tools.!</p>
+                </div> -->
+            </div><!-- End of Row -->           
+        </div><!-- End of Container-->      
+    </section><!-- End of Section -->   
+  
+<!--End of Process registration-->
+
+<!-- Chatbot -->
+ <section style="background-color: #eee;">
+  <div class="container py-5">
+
+    <div class="row d-flex justify-content-center">
+      <div class="col-md-8 col-lg-6 col-xl-4">
+
+        <div class="card" id="chat1" style="border-radius: 15px;">
+          <div
+            class="card-header d-flex justify-content-between align-items-center p-3 bg-info text-white border-bottom-0"
+            style="border-top-left-radius: 15px; border-top-right-radius: 15px;">
+            <i class="fas fa-angle-left"></i>
+            <p class="mb-0 fw-bold">Live chat</p>
+            <i class="fas fa-times"></i>
+          </div>
+          <div class="card-body">
+
+            <div class="d-flex flex-row justify-content-start mb-4">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                alt="avatar 1" style="width: 45px; height: 100%;">
+              <div class="p-3 ms-3" style="border-radius: 15px; background-color: rgba(57, 192, 237,.2);">
+                <p class="small mb-0">Hello and thank you for visiting MDBootstrap. Please click the video
+                  below.</p>
+              </div>
+            </div>
+
+            <div class="d-flex flex-row justify-content-end mb-4">
+              <div class="p-3 me-3 border" style="border-radius: 15px; background-color: #fbfbfb;">
+                <p class="small mb-0">Thank you, I really like your product.</p>
+              </div>
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava2-bg.webp"
+                alt="avatar 1" style="width: 45px; height: 100%;">
+            </div>
+
+            <div class="d-flex flex-row justify-content-start mb-4">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                alt="avatar 1" style="width: 45px; height: 100%;">
+              <div class="ms-3" style="border-radius: 15px;">
+                <div class="bg-image">
+                  <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/screenshot1.webp"
+                    style="border-radius: 15px;" alt="video">
+                  <a href="#!">
+                    <div class="mask"></div>
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            <div class="d-flex flex-row justify-content-start mb-4">
+              <img src="https://mdbcdn.b-cdn.net/img/Photos/new-templates/bootstrap-chat/ava1-bg.webp"
+                alt="avatar 1" style="width: 45px; height: 100%;">
+              <div class="p-3 ms-3" style="border-radius: 15px; background-color: rgba(57, 192, 237,.2);">
+                <p class="small mb-0">...</p>
+              </div>
+            </div>
+
+            <div class="form-outline">
+              <textarea class="form-control" id="textAreaExample" rows="4"></textarea>
+              <label class="form-label" for="textAreaExample">Type your message</label>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</section>
+<!--End of Chatbot-->
+
+  
+  <br />
+  <br />
+  <br />
+  
+<!--  Form section -->
+  
+	</section>
+<!-- End of Form -->	
+	
+	
+	
+   <br />
+  <br />
+  <br />
+	
+	
+	
+  
+	<!--  Model section -->
+	
+    <section>
+        <!-- Container -->
+        <div class="container">
+            <!-- Row -->
+            <div class="row justify-content-between align-items-center">                
+                <div class="col-md-5">
+                    <h4 class="title mb-3">Architecture Overview and Data Flow Chart.</h4>
+                    <p>Goal-oriented dialogue systems is a category of dialogue systems designed to solve one or multiple specific goals or tasks (e.g. flight reservation, hotel reservation, food ordering, appointment scheduling). Traditionally, goal-oriented dialogue systems are set up as a pipeline with four main modules: 1-Natural Language Understanding (NLU), 2-Dialogue State Tracking (DST), 3-Dialog Policy Manager, and 4-Response Generator. NLU extracts the semantic information from each dialogue turn which includes e.g. user intents and slot values mentioned by the user or system. DST takes the extracted entities to build the state of the user goal by aggregating and tracking the information across all turns of the dialogue. Dialog Policy Manager is responsible for deciding the next action of the system based on the current state. Finally, Response Generator converts the system action into human natural text understandable by the user.</p>
+<!--                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, amet!</p> -->
+<!--                     <button class="btn btn-outline-primary btn-sm">Learn More</button> -->
+
+                </div>
+                <div class="col-md-6">
+                    <div class="img-wrapper">
+                        <div class="after right"></div>
+                        <img src="assets/images/caife-flow-chart.png" class="w-100" alt="About Us">
+                    </div>                      
+                </div>
+            </div><!-- End of Row -->           
+        </div><!-- End of Container-->      
+    </section><!-- End of Section -->
+	
+   <br />
+  <br />
+  <br />
+	<!-- Architecture Section -->
+    <section>
+        <!-- Container -->
+        <div class="container">
+            <!-- Row -->
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-6">
+                    <div class="img-wrapper">
+                        <div class="after"></div>
+                        <img src="assets/images/architecture.png" class="w-100" alt="architecture">
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <h4 class="title mb-3">This is CAiFE high level architecture.</h4>
+                    
+                    <p>In the offline mode, models will be trained on available datasets and kept ready for further use. Using the Caife portal, a business owner can initiate meta learning for the domain the business would like to use. Data can be supplied and model will train using that data.</p>
+                    <p>Business owner will also have to supply knowledge base data in pre-defined format so it can be used to make the chatbot business specific. If no training data is available, a model based on selected domain will be chosen. Model and knowledge base will be integrated to create a URL that can be used in website.
+</p>
+                </div>
+            </div><!-- End of Row -->           
+        </div><!-- End of Container-->      
+    </section><!-- End of Section -->   
+
+	
+	
+  <br />
+  <br />
+  <br />
+	
+  <div id="about" class="about-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4">
+          <div class="left-image wow fadeIn" data-wow-duration="1s" data-wow-delay="0.2s">
+            <img src="assets/images/about-left-image.png" alt="person graphic">
+          </div>
+        </div>
+        <div class="col-lg-8 align-self-center">
+          <div class="services">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                  <div class="icon">
+                    <img src="assets/images/service-icon-01.png" alt="reporting">
+                  </div>
+                  <div class="right-text">
+                    <h4>Data Analysis</h4>
+                    <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.7s">
+                  <div class="icon">
+                    <img src="assets/images/service-icon-02.png" alt="">
+                  </div>
+                  <div class="right-text">
+                    <h4>Data Reporting</h4>
+                    <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="0.9s">
+                  <div class="icon">
+                    <img src="assets/images/service-icon-03.png" alt="">
+                  </div>
+                  <div class="right-text">
+                    <h4>Web Analytics</h4>
+                    <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="item wow fadeIn" data-wow-duration="1s" data-wow-delay="1.1s">
+                  <div class="icon">
+                    <img src="assets/images/service-icon-04.png" alt="">
+                  </div>
+                  <div class="right-text">
+                    <h4>SEO Suggestions</h4>
+                    <p>Lorem ipsum dolor sit amet, ctetur aoi adipiscing eliter</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+	
+	
+  <br />
+  <br />
+  <br />
+	
+	
+	
+<!-- Chatbot Section -->	
+<!-- 	<div id="center-text">
+    <h2>ChatBox UI</h2>
+    <p>Message send and scroll to bottom enabled </p>
+  </div>  -->
+
+	
+<div id="body"> 
+  
+<div id="chat-circle" class="btn btn-raised">
+        <div id="chat-overlay"></div>
+        <i class="material-icons">chat</i>
+	</div>
+  
+  <div class="chat-box">
+    <div class="chat-box-header">
+      ChatBot
+      <span class="chat-box-toggle"><i class="material-icons">close</i></span>
+    </div>
+    <div class="chat-box-body">
+      <div class="chat-box-overlay">   
+      </div>
+      <div class="chat-logs">
+       
+      </div><!--chat-log -->
+    </div>
+    <div class="chat-input">      
+      <form>
+        <input type="text" id="chat-input" placeholder="Send a message..."/>
+      <button type="submit" class="chat-submit" id="chat-submit"><i class="material-icons">send</i></button>
+      </form>      
+    </div>
+  </div>
+ 
 </div>
-</div>
+	
+<!-- End of Chatbot Section -->
+	
 
-<form class="steps" accept-charset="UTF-8" enctype="multipart/form-data" novalidate="">
-  <ul id="progressbar">
-    <li class="active">User Information</li>
-    <li>Aquisition</li>
-    <li>Cultivation</li>
-    <li>Cultivation2</li>
-    <li>Retention</li>
-  </ul>
+    <!--==========================
+    Buffer Section
+  ============================-->
+  <section id="team" class="padd-section text-center wow fadeInUp">
 
+    <div class="container">
+      <div class="section-title text-center">
 
+      
 
-  <!-- USER INFORMATION FIELD SET --> 
-  <fieldset>
-    <h2 class="fs-title">Basic Information</h2>
-    <h3 class="fs-subtitle">We just need some basic information to begin your API request.</h3>
-    <!-- Begin What's Your First Name Field -->
-        <div class="hs_firstname field hs-form-field">
-        
-          <label for="firstname-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">What's your First Name? *</label>
-
-          <input id="firstname-99a6d115-5e68-4355-a7d0-529207feb0b3_2983" name="firstname" required="required" type="text" value="" placeholder="" data-rule-required="true" data-msg-required="Please include your first name" >
-          <span class="error1" style="display: none;">
-              <i class="error-log fa fa-exclamation-triangle"></i>
-          </span>
-        </div>
-    <!-- End What's Your First Name Field -->
-
-    <!-- Begin What's Your Email Field -->
-        <div class="hs_email field hs-form-field">
-        
-          <label for="email-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">What's your E-mail Address? *</label>
-
-          <input id="email-99a6d115-5e68-4355-a7d0-529207feb0b3_2983" name="email" required="required" type="email" value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid email address." >
-          <span class="error1" style="display: none;">
-              <i class="error-log fa fa-exclamation-triangle"></i>
-          </span>
-        </div>
-    <!-- End What's Your Email Field -->
-
-    <!-- Begin Total Number of Constituents in Your Database Field -->
-        <div class="hs_email field hs-form-field hs_total_number_of_constituents_in_your_database">
-        
-          <label for="edit-submitted-constituent-base-total-constituents total_number_of_constituents_in_your_database-99a6d115-5e68-4355-a7d0-529207feb0b3_6344">What's the Total Number of Constituents in your Database? *</label>
-
-          <input id="edit-submitted-constituent-base-total-constituents" class="form-text hs-input" name="total_number_of_constituents_in_your_database" required="required" size="60" maxlength="128" type="number" value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number" >
-          <span class="error1" style="display: none;">
-              <i class="error-log fa fa-exclamation-triangle"></i>
-          </span>
-        </div>
-
-    <!-- End Total Number of Constituents in Your Database Field -->
-    <input type="button" data-page="1" name="next" class="next action-button" value="Next" />
-    <div class="explanation btn btn-small modal-trigger" data-modal-id="modal-3"><i class="question-log fa fa-question-circle"></i> What Is This?</div>
-  </fieldset>
-
-
-
-  <!-- ACQUISITION FIELD SET -->  
-  <fieldset>
-    <h2 class="fs-title">Acquisition of Donors</h2>
-    <h3 class="fs-subtitle">How have you been doing in acquiring donors?</h3>
-      <!-- Begin Total Number of Donors in Year 1 Field -->
-        <div class="form-item webform-component webform-component-textfield hs_total_number_of_donors_in_year_1 field hs-form-field" id="webform-component-acquisition--amount-1">
-        
-          <label for="edit-submitted-acquisition-amount-1 total_number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_6344">What was your number of total donors in year 1? *</label>
-
-          <input id="edit-submitted-acquisition-amount-1" class="form-text hs-input" name="total_number_of_donors_in_year_1" required="required" size="60" maxlength="128" type="number" value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
-          <span class="error1" style="display: none;">
-              <i class="error-log fa fa-exclamation-triangle"></i>
-          </span>
-        </div>
-      <!-- End Total Number of Donors in Year 1 Field -->
-
-      <!-- Begin Total Number of Donors in Year 2 Field -->
-        <div class="form-item webform-component webform-component-textfield hs_total_number_of_donors_in_year_2 field hs-form-field" id="webform-component-acquisition--amount-2">
-        
-          <label for="edit-submitted-acquisition-amount-2 total_number_of_donors_in_year_2-99a6d115-5e68-4355-a7d0-529207feb0b3_6344">What was your number of total donors in year 2? *</label>
-
-          <input id="edit-submitted-acquisition-amount-2" class="form-text hs-input" name="total_number_of_donors_in_year_2" required="required" size="60" maxlength="128" type="number" value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
-          <span class="error1" style="display: none;">
-              <i class="error-log fa fa-exclamation-triangle"></i>
-          </span>
-        </div>
-        <!-- End Total Number of Donors in Year 2 Field -->
-
-      <!-- Begin Calc of Total Number of Donors Fields -->
-      <!-- THIS FIELD IS NOT EDITABLE | GRAYED OUT -->
-        <div class="form-item webform-component webform-component-textfield webform-container-inline hs_total_donor_percent_change field hs-form-field">
-        
-          <label for="edit-submitted-acquisition-percent-change total_donor_percent_change-99a6d115-5e68-4355-a7d0-529207feb0b3_6344">Total Donors Percent Change</label>
-
-          <input id="edit-submitted-acquisition-percent-change" class="form-text hs-input" name="total_donor_percent_change" readonly="readonly" size="60" maxlength="128" type="text" value="" placeholder="0">
-        </div>
-        <!-- End Calc of Total Number of Donors Fields -->
-    <input type="button" data-page="2" name="previous" class="previous action-button" value="Previous" />
-    <input type="button" data-page="2" name="next" class="next action-button" value="Next" />
-    <div class="explanation btn btn-small modal-trigger" data-modal-id="modal-3">What Is This?</div>
-  </fieldset>
-
-
-
-  <!-- Cultivation FIELD SET -->  
-  <fieldset>
-    <h2 class="fs-title">Cultivation and Nurturing your Donors</h2>
-    <h3 class="fs-subtitle">How have you been nurturing donors to get better donations?</h3>
-      <!-- Begin Average Gift Size in Year 1 Field -->
-        <div class="form-item webform-component webform-component-textfield hs_average_gift_size_in_year_1 field hs-form-field" id="edit-submitted-cultivation-amount-1 average_gift_size_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_3256">
-        
-          <label for="edit-submitted-cultivation-amount-1 average_gift_size_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_3256">What was your average gift size in year 1? *</label>
-
-          <input id="edit-submitted-cultivation-amount-1" class="form-text hs-input" name="average_gift_size_in_year_1" required="required" size="60" maxlength="128" type="number" value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
-          <span class="error1" style="display: none;">
-              <i class="error-log fa fa-exclamation-triangle"></i>
-          </span>
-        </div>
-        <!-- End Average Gift Size in Year 1 Field -->
-
-      <!-- Begin Average Gift Size in Year 2 Field -->
-        <div class="form-item webform-component webform-component-textfield hs_average_gift_size_in_year_2 field hs-form-field" id="webform-component-cultivation--amount-2">
-        
-          <label for="edit-submitted-cultivation-amount-2 average_gift_size_in_year_2-99a6d115-5e68-4355-a7d0-529207feb0b3_3256">What was your average gift size in year 2? *</label>
-
-          <input id="edit-submitted-cultivation-amount-2" class="form-text hs-input" name="average_gift_size_in_year_2" required="required" size="60" maxlength="128" type="number" value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
-          <span class="error1" style="display: none;">
-              <i class="error-log fa fa-exclamation-triangle"></i>
-          </span>
-        </div>
-        <!-- End Average Gift Size in Year 2 Field -->
-
-      <!-- Begin Average Gift Size Perchent Change Field -->
-      <!-- THIS FIELD IS NOT EDITABLE | GRAYED OUT -->
-        <div class="form-item webform-component webform-component-textfield webform-container-inline hs_average_gift_size_percent_change field hs-form-field" id="webform-component-cultivation--percent-change1">
-        
-          <label for="edit-submitted-cultivation-percent-change1 average_gift_size_percent_change-99a6d115-5e68-4355-a7d0-529207feb0b3_3256">Average Gift Size Percent Change</label>
-
-          <input id="edit-submitted-cultivation-percent-change1" class="form-text hs-input" name="average_gift_size_percent_change" readonly="readonly" size="60" maxlength="128" type="text" value="" placeholder="0">
-        </div>
-        <!-- End Average Gift Size Perchent Change Field -->
-    <input type="button" data-page="3" name="previous" class="previous action-button" value="Previous" />
-    <input type="button" data-page="3" name="next" class="next action-button" value="Next" />
-    <div class="explanation btn btn-small modal-trigger" data-modal-id="modal-3">What Is This?</div>
-  </fieldset>
-
-
-
-  <!-- Cultivation2 FIELD SET --> 
-  <fieldset>
-    <h2 class="fs-title">Total Cultivation in Donation</h2>
-    <h3 class="fs-subtitle">Let's talk about your donations as a whole</h3>
-              <!-- Begin Total Giving In Year 1 Field -->
-        <div class="form-item webform-component webform-component-textfield" id="webform-component-cultivation--amount-3 hs_total_giving_in_year_1 field hs-form-field">
-        
-          <label for=" edit-submitted-cultivation-amount-3 total_giving_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_4902">What was your total giving in Year 1? *</label>
-
-          <input id="edit-submitted-cultivation-amount-3" class="form-text hs-input" name="total_giving_in_year_1" required="required" size="60" maxlength="128" type="number" value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
-          <span class="error1" style="display: none;">
-              <i class="error-log fa fa-exclamation-triangle"></i>
-          </span>
-        </div>
-        <!-- End Total Giving In Year 1 Field -->
-
-      <!-- Begin Total Giving In Year 2 Field -->
-        <div class="form-item webform-component webform-component-textfield hs_total_giving_in_year_2 field hs-form-field" id="webform-component-cultivation--amount-4"> 
-        
-          <label for=" edit-submitted-cultivation-amount-4 total_giving_in_year_2-99a6d115-5e68-4355-a7d0-529207feb0b3_4902">What was your total giving in Year 2? *</label>
-
-          <input id="edit-submitted-cultivation-amount-4" class="form-text hs-input" name="total_giving_in_year_2" required="required" size="60" maxlength="128" type="number" value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
-        <span class="error1" style="display: none;">
-              <i class="error-log fa fa-exclamation-triangle"></i>
-          </span>
-        </div>
-        
-        <!-- End Total Giving In Year 2 Field -->
-
-      <!-- Begin Average Gift Size Percent Change Field 2 -->
-      <!-- THIS FIELD IS NOT EDITABLE | GRAYED OUT -->
-        <div class="form-item webform-component webform-component-textfield webform-container-inline hs_total_giving_percent_change field hs-form-field" id="webform-component-cultivation--percent-change2">
-
-          <label for=" edit-submitted-cultivation-percent-change2 total_giving_percent_change-99a6d115-5e68-4355-a7d0-529207feb0b3_4902">Average Gift Size Percent Change</label>
-
-          <input id="edit-submitted-cultivation-percent-change2" class="form-text hs-input" name="total_giving_percent_change" readonly="readonly" size="60" maxlength="128" type="text" value="" placeholder="0">
-        </div>
-        <!-- End Average Gift Size Percent Change Field 2 -->
-    <input type="button" data-page="4" name="previous" class="previous action-button" value="Previous" />
-    <input type="button" data-page="4" name="next" class="next action-button" value="Next" />
-    <div class="explanation btn btn-small modal-trigger" data-modal-id="modal-3">What Is This?</div>
-  </fieldset>
-
-
-
-  <!-- RETENTION FIELD SET -->  
-  <fieldset>
-    <h2 class="fs-title">Retention of your donors</h2>
-    <h3 class="fs-subtitle">How long can you keep your donors and their donations?</h3>
-        <!-- Begin Total Number of Donors Who Gave in Year 1 Field -->
-          <div class="form-item webform-component webform-component-textfield hs_number_of_donors_in_year_1 field hs-form-field" id="webform-component-retention--amount-1"> 
-        
-          <label for=" edit-submitted-retention-amount-1 number_of_donors_in_year_1-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">What was your total number of donors who gave in year 1? *</label>
-
-          <input id="edit-submitted-retention-amount-1" class="form-text hs-input" name="number_of_donors_in_year_1" required="required" size="60" maxlength="128" type="number" value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
-          <span class="error1" style="display: none;">
-              <i class="error-log fa fa-exclamation-triangle"></i>
-          </span>
+      </div>
+    </div>
+  </section>
+  
+  
+ 
+	
+	
+	<br />
+	<br />
+	<br />
+	
+	
+	
+  <div id="contact" class="contact-us section">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 align-self-center wow fadeInLeft" data-wow-duration="0.5s" data-wow-delay="0.25s">
+          <div class="section-heading">
+            <h2>Please fill up the form and send us a message for creating API for your chatbot domain application.</h2>
+            <p>Our few-shot meta-learning chatbot is highly customized for the domain that you have chosen in the domain field and it is ready to be used for your application. This app is an open source and totally free for your business application. Your will receive an API verification email once we have verified your business legal compliances.</p>
+            <div class="phone-info">
+              <h4>For any enquiry, Call Us: <span><i class="fa fa-phone"></i> <a href="#">010-020-0340</a></span></h4>
+            </div>
           </div>
-        <!-- End Total Number of Donors Who Gave in Year 1 Field-->
-
-
-        <!-- Begin Total Number of Donors Who Gave in Year 1 and Year 2 Field -->
-          <div class="form-item webform-component webform-component-textfield" id="webform-component-retention--amount-2 hs_number_of_year_1_donors_who_also_gave_in_year_2 field hs-form-field">
-        
-          <label for=" edit-submitted-retention-amount-2 number_of_year_1_donors_who_also_gave_in_year_2-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">What was your total number of donors who gave in year 1 that also gave in year 2? *</label>
-
-          <input id="edit-submitted-retention-amount-2" class="form-text hs-input" name="number_of_year_1_donors_who_also_gave_in_year_2" required="required" size="60" maxlength="128" type="number" value="" placeholder="" data-rule-required="true" data-msg-required="Please enter a valid number">
+        </div>
+        <div class="col-lg-6 wow fadeInRight" data-wow-duration="0.5s" data-wow-delay="0.25s">
+          <form id="contact" action="" method="post">
+            <div class="row">
+              <div class="col-lg-6">
+                <fieldset>
+                  <input type="name" name="name" id="name" placeholder="Name" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-6">
+                <fieldset>
+                  <input type="surname" name="surname" id="surname" placeholder="Surname" autocomplete="on" required>
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <input type="text" name="email" id="email" pattern="[^ @]*@[^ @]*" placeholder="Your Email" required="">
+                </fieldset>
+              </div>
+		
+		<div class="col-lg-12">
+                <fieldset>
           
-          <span class="error1" style="display: none;">
-              <i class="error-log fa fa-exclamation-triangle"></i>
-          </span>
-          </div>
-        <!-- End Total Number of Donors Who Gave in Year 1 and Year 2 Field -->
+		   <div class="col-lg-12">
+		  <label for="sel1">Select Domain:</label>
+		  <select class="form-control" id="sel1">
+		    <option>Restaurant</option>
+		    <option>Hotel</option>
+		    <option>Vaccination</option>
+		    <option>Car Rental</option>
+		  </select>
+		  </div>
+		   </select>
+		    </fieldset>
+		  </div>
+		  
+		   <div class="col-lg-12">
+		  <fieldset>
+			  <br/>
+		  </fieldset>
+		  </div>
+		  
+              <div class="col-lg-12">
+                <fieldset>
+                  <textarea name="message" type="text" class="form-control" id="message" placeholder="Message" required=""></textarea>  
+                </fieldset>
+              </div>
+              <div class="col-lg-12">
+                <fieldset>
+                  <button type="submit" id="form-submit" class="main-button ">Send Message</button>
+                </fieldset>
+              </div>
+            </div>
+            <div class="contact-dec">
+              <img src="assets/images/contact-decoration.png" alt="">
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
 
-        <!-- Begin Retention Rate Percent -->
-          <div class="form-item webform-component webform-component-textfield" id="webform-component-retention--percent-change field hs-form-field">
-        
-          <label for="edit-submitted-retention-percent-change">Retention Rate</label>
-
-         <input id="edit-submitted-retention-percent-change" class="form-text hs-input" name="retention_rate_percent" readonly="readonly" size="60" maxlength="128" type="text" value="" placeholder="0">
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-12 wow fadeIn" data-wow-duration="1s" data-wow-delay="0.25s">
+          <p>© Copyright 2022 CAiFE. All Rights Reserved. 
           
-          <span class="error1" style="display: none;">
-              <i class="error-log fa fa-exclamation-triangle"></i>
-          </span>
-          </div>
-
-        <!-- End Retention Rate Percent -->
-
-
-        <!-- Begin Final Calc -->
-          <div class="form-item webform-component webform-component-textfield hs_fundraising_400_index field hs-form-field" id="webform-component-final-grade--grade">
-
-          <label for=" fundraising_400_index-99a6d115-5e68-4355-a7d0-529207feb0b3_2983">Fundraising 400 Index Score</label>
-
-          <input id="edit-submitted-final-grade-grade" class="form-text hs-input" name="fundraising_400_index" readonly="readonly" size="60" maxlength="128" type="text" value="" placeholder="0">
-          </div>
-        <!-- End Final Calc -->
-    <input type="button" data-page="5" name="previous" class="previous action-button" value="Previous" />
-    <input id="submit" class="hs-button primary large action-button next" type="submit" value="Submit">
-    <div class="explanation btn btn-small modal-trigger" data-modal-id="modal-3">What Is This?</div>
-</fieldset>
-
-  <fieldset>
-    <h2 class="fs-title">It's on the way!</h2>
-    <h3 class="fs-subtitle">Thank you for trying out our marketing grader, please go check your email for your fundraising report card and some helpful tips to improve it!</h3>
-    <div class="explanation btn btn-small modal-trigger" data-modal-id="modal-3">What Is This?</div>
-  </fieldset>
-
- <!-- Scripts -->
+          <br>Design Credit: <a rel="nofollow" href="https://templatemo.com">TemplateMo</a></p>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- Scripts -->
   <!-- core  -->
   <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
   <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
@@ -342,5 +558,6 @@ https://templatemo.com/tm-562-space-dynamic
   <script src="assets/js/animation.js"></script>
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/templatemo-custom.js"></script>
-  <script src="assets/js/form.js"></script>
 
+</body>
+</html>
