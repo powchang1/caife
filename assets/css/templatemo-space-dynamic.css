@@ -1884,40 +1884,42 @@ responsive
 -----------------------*/
 /*custom font*/
 /*Background color*/
-#grad1 {
-    background-color: : #9C27B0;
-    background-image: linear-gradient(120deg, #FF4081, #81D4FA);
+/*custom font*/
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+/*basic reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    height: 100%;
+    background: #eee;
+}
+
+body {
+    font-family: Montserrat, arial, verdana;
+    background: transparent;
+    overflow: hidden;
 }
 
 /*form styles*/
 #msform {
     text-align: center;
     position: relative;
-    margin-top: 20px;
-}
-
-#msform fieldset .form-card {
-    background: white;
-    border: 0 none;
-    border-radius: 0px;
-    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
-    padding: 20px 40px 30px 40px;
-    box-sizing: border-box;
-    width: 94%;
-    margin: 0 3% 20px 3%;
-
-    /*stacking fieldsets above each other*/
-    position: relative;
+    margin-top: 30px;
 }
 
 #msform fieldset {
     background: white;
     border: 0 none;
-    border-radius: 0.5rem;
+    border-radius: 8px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
     box-sizing: border-box;
-    width: 100%;
-    margin: 0;
-    padding-bottom: 20px;
+    width: 80%;
+    margin: 0 10%;
 
     /*stacking fieldsets above each other*/
     position: relative;
@@ -1928,200 +1930,135 @@ responsive
     display: none;
 }
 
-#msform fieldset .form-card {
-    text-align: left;
-    color: #9E9E9E;
-}
-
+/*inputs*/
 #msform input, #msform textarea {
-    padding: 0px 8px 4px 8px;
-    border: none;
-    border-bottom: 1px solid #ccc;
-    border-radius: 0px;
-    margin-bottom: 25px;
-    margin-top: 2px;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    margin-bottom: 10px;
     width: 100%;
     box-sizing: border-box;
     font-family: montserrat;
     color: #2C3E50;
-    font-size: 16px;
-    letter-spacing: 1px;
+    font-size: 13px;
 }
 
 #msform input:focus, #msform textarea:focus {
     -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
-    border: none;
-    font-weight: bold;
-    border-bottom: 2px solid skyblue;
+    border: 1px solid #2098ce;
     outline-width: 0;
+    transition: All 0.5s ease-in;
+    -webkit-transition: All 0.5s ease-in;
+    -moz-transition: All 0.5s ease-in;
+    -o-transition: All 0.5s ease-in;
 }
 
-/*Blue Buttons*/
+/*buttons*/
 #msform .action-button {
     width: 100px;
-    background: skyblue;
+    background: #2098ce;
     font-weight: bold;
     color: white;
     border: 0 none;
-    border-radius: 0px;
+    border-radius: 25px;
     cursor: pointer;
     padding: 10px 5px;
     margin: 10px 5px;
 }
 
 #msform .action-button:hover, #msform .action-button:focus {
-    box-shadow: 0 0 0 2px white, 0 0 0 3px skyblue;
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #2098ce;
 }
 
-/*Previous Buttons*/
 #msform .action-button-previous {
     width: 100px;
-    background: #616161;
+    background: #aCbEd0;
     font-weight: bold;
     color: white;
     border: 0 none;
-    border-radius: 0px;
+    border-radius: 25px;
     cursor: pointer;
     padding: 10px 5px;
     margin: 10px 5px;
 }
 
 #msform .action-button-previous:hover, #msform .action-button-previous:focus {
-    box-shadow: 0 0 0 2px white, 0 0 0 3px #616161;
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #aCbEd0;
 }
 
-/*Dropdown List Exp Date*/
-select.list-dt {
-    border: none;
-    outline: 0;
-    border-bottom: 1px solid #ccc;
-    padding: 2px 5px 3px 5px;
-    margin: 2px;
-}
-
-select.list-dt:focus {
-    border-bottom: 2px solid skyblue;
-}
-
-/*The background card*/
-.card {
-    z-index: 0;
-    border: none;
-    border-radius: 0.5rem;
-    position: relative;
-}
-
-/*FieldSet headings*/
+/*headings*/
 .fs-title {
-    font-size: 25px;
+    font-size: 18px;
+    text-transform: uppercase;
     color: #2C3E50;
     margin-bottom: 10px;
+    letter-spacing: 2px;
     font-weight: bold;
-    text-align: left;
+}
+
+.fs-subtitle {
+    font-weight: normal;
+    font-size: 13px;
+    color: #666;
+    margin-bottom: 20px;
 }
 
 /*progressbar*/
 #progressbar {
     margin-bottom: 30px;
     overflow: hidden;
-    color: lightgrey;
-}
-
-#progressbar .active {
-    color: #000000;
+    /*CSS counters to number the steps*/
+    counter-reset: step;
 }
 
 #progressbar li {
     list-style-type: none;
-    font-size: 12px;
-    width: 25%;
+    color: #666;
+    text-transform: uppercase;
+    font-size: 9px;
+    width: 33.33%;
     float: left;
     position: relative;
+    letter-spacing: 1px;
 }
 
-/*Icons in the ProgressBar*/
-#progressbar #account:before {
-    font-family: FontAwesome;
-    content: "\f023";
-}
-
-#progressbar #personal:before {
-    font-family: FontAwesome;
-    content: "\f007";
-}
-
-#progressbar #payment:before {
-    font-family: FontAwesome;
-    content: "\f09d";
-}
-
-#progressbar #confirm:before {
-    font-family: FontAwesome;
-    content: "\f00c";
-}
-
-/*ProgressBar before any progress*/
 #progressbar li:before {
-    width: 50px;
-    height: 50px;
-    line-height: 45px;
+    content: counter(step);
+    counter-increment: step;
+    width: 24px;
+    height: 24px;
+    line-height: 26px;
     display: block;
-    font-size: 18px;
-    color: #ffffff;
-    background: lightgray;
-    border-radius: 50%;
+    font-size: 12px;
+    color: #333;
+    background: white;
+    border-radius: 25px;
     margin: 0 auto 10px auto;
-    padding: 2px;
 }
 
-/*ProgressBar connectors*/
+/*progressbar connectors*/
 #progressbar li:after {
     content: '';
     width: 100%;
     height: 2px;
-    background: lightgray;
+    background: white;
     position: absolute;
-    left: 0;
-    top: 25px;
-    z-index: -1;
+    left: -50%;
+    top: 9px;
+    z-index: -1; /*put it behind the numbers*/
 }
 
-/*Color number of the step and the connector before it*/
+#progressbar li:first-child:after {
+    /*connector not needed before the first step*/
+    content: none;
+}
+
+/*marking active/completed steps blue*/
+/*The number of the step and the connector before it = blue*/
 #progressbar li.active:before, #progressbar li.active:after {
-    background: skyblue;
-}
-
-/*Imaged Radio Buttons*/
-.radio-group {
-    position: relative;
-    margin-bottom: 25px;
-}
-
-.radio {
-    display:inline-block;
-    width: 204;
-    height: 104;
-    border-radius: 0;
-    background: lightblue;
-    box-shadow: 0 2px 2px 2px rgba(0, 0, 0, 0.2);
-    box-sizing: border-box;
-    cursor:pointer;
-    margin: 8px 2px; 
-}
-
-.radio:hover {
-    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.3);
-}
-
-.radio.selected {
-    box-shadow: 1px 1px 2px 2px rgba(0, 0, 0, 0.1);
-}
-
-/*Fit image in bootstrap div*/
-.fit-image{
-    width: 100%;
-    object-fit: cover;
+    background: #2098ce;
+    color: white;
 }
 
