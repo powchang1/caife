@@ -1887,23 +1887,6 @@ responsive
 /*custom font*/
 @import url(https://fonts.googleapis.com/css?family=Montserrat);
 
-/*basic reset*/
-* {
-    margin: 0;
-    padding: 0;
-}
-
-html {
-    height: 100%;
-    background: #eee;
-}
-
-body {
-    font-family: Montserrat, arial, verdana;
-    background: transparent;
-    overflow: hidden;
-}
-
 /*form styles*/
 #msform {
     text-align: center;
