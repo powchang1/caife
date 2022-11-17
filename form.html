@@ -230,110 +230,44 @@
                </div>
             </div>
             <div class="step">
-               <h4>Does your company have any technical resources to maintain and integrate the solution into your company website?</h4>
+               <h4>What is the workflow?</h4>
                <div class="form-check ps-0 q-box">
                   <div class="q-box__question">
-                     <input class="form-check-input question__input" id="q_2_yes" name="q_2" type="radio" value="Yes"> 
-                     <label class="form-check-label question__label" for="q_2_yes">Yes</label>
+                     <input class="form-check-input question__input" id="q_2_find" name="q_2" type="checkbox" value="find"> 
+                     <label class="form-check-label question__label" for="q_2_find">Find</label>
                   </div>
                   <div class="q-box__question">
-                     <input checked class="form-check-input question__input" id="q_2_no" name="q_2" type="radio" value="No"> 
-                     <label class="form-check-label question__label" for="q_2_no">No</label>
+                     <input checked class="form-check-input question__input" id="q_2_book" name="q_2" type="checkbox" value="Book"> 
+                     <label class="form-check-label question__label" for="q_2_book">Book</label>
+                  </div>
+		  <div class="q-box__question">
+                     <input checked class="form-check-input question__input" id="q_2_hours_of_operation" name="q_2" type="checkbox" value="Hours of Operation"> 
+                     <label class="form-check-label question__label" for="q_2_hours_of_operation">Hours of Operation</label>
                   </div>
                </div>
             </div>
             <div class="step">
-               <h4>Do you have existing dialogue data for training your AI Chatbot?</h4>
+               <h4>What are the slots?</h4>
                <div class="form-check ps-0 q-box">
                   <div class="q-box__question">
-                     <input class="form-check-input question__input" id="q_3_yes" name="q_3" type="radio" value="Yes"> 
-                     <label class="form-check-label question__label" for="q_3_yes">Yes</label>
+                     <input class="form-check-input question__input" id="q_3_name" name="q_3" type="checkbox" value="Name"> 
+                     <label class="form-check-label question__label" for="q_3_name">Name</label>
                   </div>
                   <div class="q-box__question">
-                     <input checked class="form-check-input question__input" id="q_3_no" name="q_3" type="radio" value="No"> 
-                     <label class="form-check-label question__label" for="q_3_no">No</label>
+                     <input checked class="form-check-input question__input" id="q_3_location" name="q_3" type="checkbox" value="Location"> 
+                     <label class="form-check-label question__label" for="q_3_location">Location</label>
                   </div>
-               </div>
-            </div>
-            <div class="step">
-               <h4>Which domain you would like to use the CAiFE API for? Our model could multi-domain, so you could choose more than one domain.</h4>
-               <div class="row">
-                  <div class="col-lg-6">
-                     <div class="form-check ps-0 q-box">
-                        <div class="q-box__question">
-                           <input class="form-check-input question__input q-checkbox" id="q_4_uk" name="q_4" type="checkbox" value="uk"> 
-                           <label class="form-check-label question__label" for="q_4_uk">Restaurant</label>
-                        </div>
-                     </div>
-                     <div class="form-check ps-0 q-box">
-                        <div class="q-box__question">
-                           <input class="form-check-input question__input" id="q_4_us" name="q_4" type="checkbox" value="us"> 
-                           <label class="form-check-label question__label" for="q_4_us">Hotel</label>
-                        </div>
-                     </div>
-                     <div class="form-check ps-0 q-box">
-                        <div class="q-box__question">
-                           <input class="form-check-input question__input" id="q_4_br" name="q_3" type="checkbox" value="br"> 
-                           <label class="form-check-label question__label" for="q_4_br">Taxi</label>
-                        </div>
-                     </div>
+		  <div class="q-box__question">
+                     <input checked class="form-check-input question__input" id="q_3_book_day" name="q_3" type="checkbox" value="Book Day"> 
+                     <label class="form-check-label question__label" for="q_3_book_day">Book Day</label>
                   </div>
-                  <div class="col-lg-6">
-                     <div class="form-check ps-0 q-box">
-                        <div class="q-box__question">
-                           <input class="form-check-input question__input" id="q_4_de" name="q_4" type="checkbox" value="de"> 
-                           <label class="form-check-label question__label" for="q_4_de">Cafeteria</label>
-                        </div>
-                     </div>
-                     <div class="form-check ps-0 q-box">
-                        <div class="q-box__question">
-                           <input class="form-check-input question__input" id="q_4_in" name="q_4" type="checkbox" value="in"> 
-                           <label class="form-check-label question__label" for="q_4_in">Clinic Vaccination</label>
-                        </div>
-                     </div>
-                     <div class="form-check ps-0 q-box">
-                        <div class="q-box__question">
-                           <input class="form-check-input question__input" id="q_4_eu" name="q_4" type="checkbox" value="eu"> 
-                           <label class="form-check-label question__label" for="q_4_eu">School</label>
-                        </div>
-                     </div>
+		   <div class="q-box__question">
+                     <input checked class="form-check-input question__input" id="q_3_book_time" name="q_3" type="checkbox" value="Book Time"> 
+                     <label class="form-check-label question__label" for="q_3_book_time">Book Time</label>
                   </div>
-                  <div class="col-lg-12">
-                     <div class="form-check ps-0 q-box">
-                        <div class="q-box__question">
-                           <input class="form-check-input question__input" id="q_4_none" name="q_4" type="checkbox" value="none"> 
-                           <label class="form-check-label question__label" for="q_4_none">I just want to check out how this could be useful for my busienss.</label>
-                        </div>
-                     </div>
-                  </div>
-               </div>
-            </div>
-            <div class="step">
-               <h4>Which is the most important factor for choosing the AI Chatbot?</h4>
-               <div class="row">
-                  <div class="form-check ps-0 q-box">
-                     <div class="q-box__question">
-                        <input class="form-check-input question__input" id="q_5_breathing" name="q_5_breathing" type="checkbox" value="technical"> 
-                        <label class="form-check-label question__label" for="q_5_breathing">Technical level reuiqred for the integration</label>
-                     </div>
-                  </div>
-                  <div class="form-check ps-0 q-box">
-                     <div class="q-box__question">
-                        <input class="form-check-input question__input" id="q_5_chest" name="q_5_chest" type="checkbox" value="financial"> 
-                        <label class="form-check-label question__label" for="q_5_chest">Additional one-time financial resource required</label>
-                     </div>
-                  </div>
-                  <div class="form-check ps-0 q-box">
-                     <div class="q-box__question">
-                        <input class="form-check-input question__input" id="q_5_speech" name="q_5_speech" type="checkbox" value="accuracy"> 
-                        <label class="form-check-label question__label" for="q_5_speech">Accuracy of the chatbot response</label>
-                     </div>
-                  </div>
-                  <div class="form-check ps-0 q-box">
-                     <div class="q-box__question">
-                        <input class="form-check-input question__input" id="q_5_pale" name="q_5_pale" type="checkbox" value="naturalness"> 
-                        <label class="form-check-label question__label" for="q_5_pale">Naturalness of the language response</label>
-                     </div>
+		   <div class="q-box__question">
+                     <input checked class="form-check-input question__input" id="q_3_book_people" name="q_3" type="checkbox" value="Book people"> 
+                     <label class="form-check-label question__label" for="q_3_book_people">Book People</label>
                   </div>
                </div>
             </div>
