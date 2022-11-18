@@ -103,13 +103,22 @@ submitBtn.addEventListener('click', () => {
 function sendEmail() {
 	Email.send({
 	Host: "smtp.gmail.com",
-	Username : "<sender’s email address>",
+	Username : caife@gmail.com,
 	Password : "<email password>",
-	To : '<recipient’s email address>',
-	From : "<sender’s email address>",
-	Subject : "<email subject>",
-	Body : "<email body>",
+	To : 'powchang1@gmail.com',
+	From : "caife.api@gmail.com",
+	Subject : "CAiFE API Request Form Status",
+	Body : "Your API request is being processed. Thank you!",
 	}).then(
 		message => alert("mail sent successfully")
 	);
 }
+
+var btn = document.getElementByID('btn');
+btn.addEventListener('click', function(e) {
+	e.preventDefault()
+	var name = document.getElementById('name').value;
+	var email = document.getElementById('email').value;
+	sendEmail()
+
+
