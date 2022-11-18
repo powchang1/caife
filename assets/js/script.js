@@ -103,7 +103,7 @@ submitBtn.addEventListener('click', () => {
 function sendEmail() {
 	Email.send({
 	Host: "smtp.gmail.com",
-	Username : "caife@gmail.com";"valuelize@gmail.com",
+	Username : "caife@gmail.com",
 	Password : "z_4KYCAc8bgoXTFXLH",
 	To : 'powchang1@gmail.com',
 	From : "caife.api@gmail.com",
@@ -114,11 +114,5 @@ function sendEmail() {
 	);
 }
 
-var btn = document.getElementByID('submit-btn');
-btn.addEventListener('click', function(e) {
-	e.preventDefault()
-	var name = document.getElementById('name').value;
-	var email = document.getElementById('email').value;
-	sendEmail()
 
 
