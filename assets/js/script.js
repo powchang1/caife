@@ -100,19 +100,7 @@ submitBtn.addEventListener('click', () => {
 });
 
 
-function sendEmail() {
-	Email.send({
-	Host: "smtp.gmail.com",
-	Username : "caife@gmail.com",
-	Password : "z_4KYCAc8bgoXTFXLH",
-	To : 'powchang1@gmail.com',
-	From : "caife.api@gmail.com",
-	Subject : "CAiFE API Request Form Status",
-	Body : "Your API request is being processed. Thank you!",
-	}).then(
-		message => alert("mail sent successfully")
-	);
-}
+
 
 
 
