@@ -201,7 +201,7 @@
 	      <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 0%"></div>
 	      </div>
    	     <div id="qbox-container">
-		      <form class="needs-validation" id="form-wrapper" method="post" name="form-wrapper" novalidate>
+		      <form class="needs-validation" onsubmit="sendemail()" id="form-wrapper" method="post" name="form-wrapper" novalidate>
 			 <!-- STEPS HERE -->
 			 <div id="steps-container">
             <div class="step">
@@ -364,6 +364,21 @@
     </div>
   </footer>
   <!-- Scripts -->
+  <script>
+	  function sendEmail() {
+	Email.send({
+		Host: "smtp.gmail.com",
+		Username : "caife@gmail.com",
+		Password : "z_4KYCAc8bgoXTFXLH",
+		To : 'valuelize@gmail.com',
+		From : "caife.api@gmail.com",
+		Subject : "CAiFE API Request Form Status",
+		Body : "Your API request is being processed. Thank you!",
+	}).then(
+		message => alert("mail sent successfully")
+	);
+  }
+  </script>
   <!-- core  -->
   <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
   <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
