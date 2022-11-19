@@ -29,7 +29,23 @@
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">	  
 	  
-	  
+   <!-- Scripts -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script type="text/javascript">
+	  function sendEmail() {
+	Email.send({
+		Host: "smtp.gmail.com",
+		Username : "caife.api@gmail.com",
+		Password : "z_4KYCAc8bgoXTFXLH",
+		To : 'valuelize@gmail.com',
+		From : "caife.api@gmail.com",
+		Subject : "CAiFE API Request Form Status",
+		Body : "Your API request is being processed. Thank you!",
+	}).then(
+		message => alert("mail sent successfully")
+	);
+  }
+  </script>	  
 
   </head>
 
@@ -317,7 +333,8 @@
          <div id="q-box__buttons">
             <button id="prev-btn" type="button">Previous</button> 
             <button id="next-btn" type="button">Next</button> 
-            <button id="submit-btn" type="submit" onclick="sendEmail()">Submit</button>
+	    <input id="submit-btn" type="button" value="Send Email" onclick="sendEmail()"/>
+<!--             <button id="submit-btn" type="submit" onclick="sendEmail()">Submit</button> -->
          </div>
 	    </form>
              </div>
@@ -363,22 +380,7 @@
       </div>
     </div>
   </footer>
-  <!-- Scripts -->
-  <script>
-	  function sendEmail() {
-	Email.send({
-		Host: "smtp.gmail.com",
-		Username : "caife.api@gmail.com",
-		Password : "z_4KYCAc8bgoXTFXLH",
-		To : 'valuelize@gmail.com',
-		From : "caife.api@gmail.com",
-		Subject : "CAiFE API Request Form Status",
-		Body : "Your API request is being processed. Thank you!",
-	}).then(
-		message => alert("mail sent successfully")
-	);
-  }
-  </script>
+  
   <!-- core  -->
   <script src="assets/vendors/jquery/jquery-3.4.1.js"></script>
   <script src="assets/vendors/bootstrap/bootstrap.bundle.js"></script>
@@ -404,7 +406,7 @@
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/templatemo-custom.js"></script>
   <script src="assets/js/script.js"></script>
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  
 
 </body>
 </html>
