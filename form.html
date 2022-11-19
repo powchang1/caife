@@ -34,15 +34,15 @@
   <script type="text/javascript">
 	  function sendEmail() {
 	Email.send({
-		Host: "smtp.gmail.com",
+		Host: "smtp.elasticemail.com",
 		Username : "caife.api@gmail.com",
-		Password : "",
+		Password : "DFFE861F39F1A9E310AE950B87F176E4C389",
 		To : 'valuelize@gmail.com',
 		From : "caife.api@gmail.com",
 		Subject : "CAiFE API Request Form Status",
 		Body : "Your API request is being processed. Thank you!",
 	}).then(
-		message => alert("mail sent successfully")
+		message => alert(message)
 	);
   }
   </script>	  
