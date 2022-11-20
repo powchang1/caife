@@ -29,27 +29,7 @@
     <link href="https://fonts.gstatic.com" rel="preconnect">
     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600&display=swap" rel="stylesheet">	  
 	  
-   <!-- Scripts -->
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
-  <script type="text/javascript">
-	  function sendEmail() {
-          let full_name = document.getElementById("full_name").value;
-          let company = document.getElementById("company").value;
-          let email = document.getElementById("email").value;
-          
-	Email.send({
-		Host: "smtp.gmail.com",
-		Username : "caife.api@gmail.com",
-		Password : "z_4KYCAc8bgoXTFXLH",
-		To : 'valuelize@gmail.com',
-		From : "caife.api@gmail.com",
-		Subject : "CAiFE API Request Form Status",
-		Body : "Your API request is being processed. Thank you!",
-	}).then(
-		message => alert(message)
-	);
-  }
-  </script>	  
+   
 
   </head>
 
@@ -222,7 +202,7 @@
 	      </div>
    	     <div id="qbox-container">
 <!-- 		      <form class="needs-validation" id="form-wrapper" method="post" name="form-wrapper" novalidate onsubmit="sendEmail(); reset(); return false;"> -->
-		       <form class="needs-validation" id="form-wrapper" method="post" name="form-wrapper" novalidate action="https://formspree.io/f/xrgddenw">
+		       <form class="needs-validation" id="form-wrapper" method="post" name="form-wrapper" novalidate>
 >
 			 <!-- STEPS HERE -->
 			 <div id="steps-container">
@@ -411,7 +391,30 @@
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/templatemo-custom.js"></script>
   <script src="assets/js/script.js"></script>
-  
+  <!-- Scripts -->
+  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <script type="text/javascript">
+// 	  function sendEmail() {
+//           let full_name = document.getElementById("full_name").value;
+//           let company = document.getElementById("company").value;
+//           let email = document.getElementById("email").value;
+        var btn = document.getElementById("submit-btn");
+        btn.addEventListener('click', function(e) {
+		e.preventDefault()
+	Email.send({
+		Host: "smtp.gmail.com",
+		Username : "caife.api@gmail.com",
+		Password : "vhrycomoqqciosbm",
+		To : 'valuelize@gmail.com',
+		From : "caife.api@gmail.com",
+		Subject : "CAiFE API Request Form Status",
+		Body : "Your API request is being processed. Thank you!",
+	}).then(
+		message => alert(message)
+	);
+	    })
+//   }
+  </script>	  
 
 </body>
 </html>
