@@ -33,10 +33,14 @@
   <script src="https://smtpjs.com/v3/smtp.js"></script>
   <script type="text/javascript">
 	  function sendEmail() {
+          let full_name = document.getElementById("full_name").value;
+          let company = document.getElementById("company").value;
+          let email = document.getElementById("email").value;
+          
 	Email.send({
 		Host: "smtp.elasticemail.com",
 		Username : "caife.api@gmail.com",
-		Password : "DFFE861F39F1A9E310AE950B87F176E4C389",
+		Password : "C04B084F5072D85C71E7FED5DC3183AEA558",
 		To : 'valuelize@gmail.com',
 		From : "caife.api@gmail.com",
 		Subject : "CAiFE API Request Form Status",
@@ -217,7 +221,7 @@
 	      <div aria-valuemax="100" aria-valuemin="0" aria-valuenow="50" class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 0%"></div>
 	      </div>
    	     <div id="qbox-container">
-		      <form class="needs-validation" id="form-wrapper" method="post" name="form-wrapper" novalidate>
+		      <form class="needs-validation" id="form-wrapper" method="post" name="form-wrapper" novalidate onsubmit="sendEmail(); reset(); return false;">
 			 <!-- STEPS HERE -->
 			 <div id="steps-container">
             <div class="step">
@@ -333,7 +337,7 @@
          <div id="q-box__buttons">
             <button id="prev-btn" type="button">Previous</button> 
             <button id="next-btn" type="button">Next</button>
-            <button id="submit-btn" type="submit" onclick="sendEmail()">Submit</button>
+            <button id="submit-btn" type="submit">Submit</button>
          </div>
 	    </form>
              </div>
