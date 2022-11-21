@@ -25,6 +25,7 @@ form.onsubmit = () => {
        name : document.getElementById("full_name").value,
        email : document.getElementById("email").value,
        company : document.getElementById("company").value,  
+       phone : document.getElementById("phone").value,  
    }
    emailjs.send("service_4293ds2","template_9q5uv4r_01", param).then(function (res) {
        alert("Email is Sent Successfully!" + res.status);
