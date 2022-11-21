@@ -319,7 +319,7 @@
          <div id="q-box__buttons">
             <button id="prev-btn" type="button">Previous</button> 
             <button id="next-btn" type="button">Next</button>
-            <button id="submit-btn" type="submit">Submit</button>
+            <button onclick="SendMail()" id="submit-btn" type="submit">Submit</button>
          </div>
 	    </form>
              </div>
@@ -391,9 +391,19 @@
   <script src="assets/js/imagesloaded.js"></script>
   <script src="assets/js/templatemo-custom.js"></script>
   <script src="assets/js/script.js"></script>
-  <!-- Scripts -->
-  <script src="https://smtpjs.com/v3/smtp.js"></script>
+  <!-- email JS Scripts -->
+  <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+  </script>
   <script type="text/javascript">
+   (function(){
+      emailjs.init("X1ImK9aurSVcTeslH");
+   })();
+  </script>
+
+  <!-- smtp.js -->
+<!--   <script src="https://smtpjs.com/v3/smtp.js"></script> -->
+<!--   <script type="text/javascript">
 // 	  function sendEmail() {
 //           let full_name = document.getElementById("full_name").value;
 //           let company = document.getElementById("company").value;
@@ -404,7 +414,7 @@
 	Email.send({
 		Host: "smtp.elasticemail.com",
 		Username : "caife.api@gmail.com",
-		Password : "757F783F948B8EC2EE1770EFA168AB3B9870",
+		Password : "",
 		To : 'valuelize@gmail.com',
 		From : "caife.api@gmail.com",
 		Subject : "CAiFE API Request Form Status",
@@ -414,7 +424,7 @@
 	);
 	    })
 //   }
-  </script>	  
+  </script>	   -->
 
 </body>
 </html>
