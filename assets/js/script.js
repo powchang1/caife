@@ -26,7 +26,7 @@ form.onsubmit = () => {
        email : document.getElementById("email").value,
        company : document.getElementById("company").value,  
    }
-   emailjs.send("service_4293ds2","template_9q5uv4r_01", params).then(function (res) {
+   emailjs.send("service_4293ds2","template_9q5uv4r_01", param).then(function (res) {
        alert("Email is Sent Successfully!" + res.status);
    })    
     return false
