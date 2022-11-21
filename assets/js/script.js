@@ -8,8 +8,20 @@ let bodyElement = document.querySelector('body');
 let succcessDiv = document.getElementById('success');
 
 // email JS
-function SendMail() {
-   var param = {
+// function SendMail() {
+//    var param = {
+//        name : document.getElementById("full_name").value,
+//        email : document.getElementById("email").value,
+//        company : document.getElementById("company").value,  
+//    }
+//    emailjs.send("service_4293ds2","template_9q5uv4r_01", params).then(function (res) {
+//        alert("Email is Sent Successfully!" + res.status);
+//    })    
+// }
+
+
+form.onsubmit = () => {
+    var param = {
        name : document.getElementById("full_name").value,
        email : document.getElementById("email").value,
        company : document.getElementById("company").value,  
@@ -17,10 +29,6 @@ function SendMail() {
    emailjs.send("service_4293ds2","template_9q5uv4r_01", params).then(function (res) {
        alert("Email is Sent Successfully!" + res.status);
    })    
-}
-
-
-form.onsubmit = () => {
     return false
 }
 let current_step = 0;
