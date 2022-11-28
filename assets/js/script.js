@@ -27,6 +27,30 @@ let succcessDiv = document.getElementById('success');
 //     });
 
 
+// Request to add or remove slot textfield
+var counter = 1;
+var textbox = "";
+var hob = document.getElementById("hob")
+function addBox() {
+    var div = document.createElement("div");
+    div.setAttribute("class", "q-box__question");
+    div.setAtrribute("id", "box_"+counter);
+    
+    var textBox = "<label>Slots</label><input type="text" name="slots" class="form-control" id='other_slots_"+counter+"'><input class="mybox" type='button' value='-' onclick='removeBox(this)'>";
+    
+    div.innerHTML = textBox;
+    hob.appendChild(div);
+    counter++;
+
+}
+
+function removeBox(ele) {
+    ele.parentNode.remove();
+    
+}
+
+
+
 form.onsubmit = () => {
     var param = {
        name : document.getElementById("full_name").value,
