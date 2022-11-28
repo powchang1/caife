@@ -19,6 +19,13 @@ let succcessDiv = document.getElementById('success');
 //    })    
 // }
 
+// emailjs.send('YOUR_SERVICE_ID', 'YOUR_TEMPLATE_ID', templateParams)
+//     .then(function(response) {
+//        console.log('SUCCESS!', response.status, response.text);
+//     }, function(error) {
+//        console.log('FAILED...', error);
+//     });
+
 
 form.onsubmit = () => {
     var param = {
@@ -28,10 +35,13 @@ form.onsubmit = () => {
        phone : document.getElementById("phone").value,  
    }
    emailjs.send("service_4293ds2","template_9q5uv4r_01", param).then(function (res) {
-       alert("Email is Sent Successfully!" + res.status);
+//        alert("Email is Sent Successfully!" + res.status);
    })    
     return false
 }
+
+
+
 let current_step = 0;
 let stepCount = 3
 step[current_step].classList.add('d-block');
