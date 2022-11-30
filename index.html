@@ -323,7 +323,9 @@
             <div class="row justify-content-between align-items-center">                
                 <div class="col-md-5">
                     <h4 class="title mb-3">Architecture Overview and Data Flow Chart.</h4>
-                    <p>Goal-oriented dialogue systems is a category of dialogue systems designed to solve one or multiple specific goals or tasks (e.g. flight reservation, hotel reservation, food ordering, appointment scheduling). Traditionally, goal-oriented dialogue systems are set up as a pipeline with four main modules: 1-Natural Language Understanding (NLU), 2-Dialogue State Tracking (DST), 3-Dialog Policy Manager, and 4-Response Generator. NLU extracts the semantic information from each dialogue turn which includes e.g. user intents and slot values mentioned by the user or system. DST takes the extracted entities to build the state of the user goal by aggregating and tracking the information across all turns of the dialogue. Dialog Policy Manager is responsible for deciding the next action of the system based on the current state. Finally, Response Generator converts the system action into human natural text understandable by the user.</p>
+                    <p>Goal-oriented dialogue systems is a category of dialogue systems designed to solve one or multiple specific goals or tasks (e.g. flight reservation, hotel reservation, food ordering, appointment scheduling). Traditionally, goal-oriented dialogue systems are set up as a pipeline with four main modules: 1-Natural Language Understanding (NLU), 2-Dialogue State Tracking (DST), 3-Dialog Policy Manager, and 4-Response Generator.</p>
+		    <br />
+	            <p>NLU extracts the semantic information from each dialogue turn which includes e.g. user intents and slot values mentioned by the user or system. DST takes the extracted entities to build the state of the user goal by aggregating and tracking the information across all turns of the dialogue. Dialog Policy Manager is responsible for deciding the next action of the system based on the current state. Finally, Response Generator converts the system action into human natural text understandable by the user.</p>
 <!--                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, amet!</p> -->
 <!--                     <button class="btn btn-outline-primary btn-sm">Learn More</button> -->
 
@@ -384,7 +386,7 @@
             <!-- Row -->
             <div class="row justify-content-between align-items-center">                
                 <div class="col-md-5">
-                    <h4 class="title mb-3">Technology Overview</h4>
+                    <h4 class="title mb-3">System Architecture</h4>
                     <p>Here is a Natural language understanding (NLU) module. In this project, we use TRADE-DST, which stands for transferable dialogue state generator. This model is essentially a LSTM encoder model which converts user text into intents and slots, this works even for those unseen texts. The dialog state tracker keeps a record of slots history and current state.With a dialog management (DM) system, developers can control how the bot navigates between tasks, i.e., how it behaves when required to pause a particular task, switch intent, complete a different task, and then return to the original user request without losing context.</p>
 	            <br/>
 		    <p>The next module is Natural Language Generation (NLG) module converts a dialog act represented in a semantic form into a response in natural language. We use GPT-2 model, which is Generative Pre-trained Transformer 2 (GPT-2) is an open-source artificial intelligence created by OpenAI in February 2019. It is basically a machine learning model that is able to look at part of a sentence and predict the next word. Since it is a pre-trained model, we just did a fine-tuning here with 50 pairs of dialogues.</P>
