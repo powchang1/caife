@@ -24,6 +24,7 @@ Table of contents
 13. chatbot
 14. form
 15. testimonial
+16. form convention
 --------------------------------------------- */
 /* 
 ---------------------------------------------
@@ -2151,3 +2152,44 @@ input[type="radio"]:hover {
 
 /* Testimonial
 -----------------*/
+
+/* Form Convention
+-----------------*/
+
+.highlight {
+  background: rgba(235, 255, 51, 0.7);
+  background: linear-gradient(
+    305deg,
+    rgba(235, 255, 51, 0.6) 0%,
+    rgba(235, 255, 51, 0.4) 79%,
+    rgba(235, 255, 51, 0.8) 89%
+  );
+  border-radius: 52px 12px 7px 8px;
+}
+.hlpink {
+  background: rgba(255, 51, 180, 0.7);
+  background: linear-gradient(
+    305deg,
+    rgba(255, 51, 180, 0.6) 0%,
+    rgba(255, 51, 180, 0.4) 79%,
+    rgba(255, 51, 180, 0.8) 89%
+  );
+}
+.hlorange {
+  background: rgba(255, 105, 51, 0.7);
+  background: linear-gradient(
+    305deg,
+    rgba(255, 105, 51, 0.6) 0%,
+    rgba(255, 105, 51, 0.4) 79%,
+    rgba(255, 105, 51, 0.8) 89%
+  );
+}
+.hlviolet {
+  background: rgba(155, 84, 255, 0.7);
+  background: linear-gradient(
+    305deg,
+    rgba(155, 84, 255, 0.6) 0%,
+    rgba(155, 84, 255, 0.4) 79%,
+    rgba(155, 84, 255, 0.8) 89%
+  );
+}
