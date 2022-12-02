@@ -67,7 +67,7 @@ form.onsubmit = () => {
 
 
 let current_step = 0;
-let stepCount = 3
+let stepCount = 4
 step[current_step].classList.add('d-block');
 if (current_step == 0) {
     prevBtn.classList.add('d-none');
