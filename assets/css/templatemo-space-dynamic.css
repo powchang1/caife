@@ -296,6 +296,7 @@ header
 }
 
 .header-area .main-nav .logo {
+  display: flex;
   line-height: 100px;
   color: #fff;
   font-size: 24px;
