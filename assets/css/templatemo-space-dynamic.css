@@ -483,7 +483,7 @@ header
 .header-area .main-nav .menu-trigger {
   cursor: pointer;
   display: block;
-  position: absolute;
+  position: relative;
   top: 33px;
   width: 32px;
   height: 40px;
@@ -506,7 +506,7 @@ header
   transition: all 0.4s;
   background-color: #1e1e1e;
   display: block;
-  position: relative;
+  position: absolute;
   width: 30px;
   height: 2px;
   left: 0;
@@ -526,7 +526,7 @@ header
   transition: all 0.4s;
   background-color: #1e1e1e;
   display: block;
-  position: relative;
+  position: absolute;
   width: 30px;
   height: 2px;
   left: 0;
