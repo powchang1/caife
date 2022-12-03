@@ -310,7 +310,6 @@ header
 }
 
 .header-area .main-nav .logo h4 {
-    display: block;
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
@@ -329,17 +328,14 @@ header
 }
 
 .background-header .main-nav .logo h4 {
- 
   line-height: 100px;
 }
 
 .background-header .main-nav .nav {
- 
   margin-top: 20px !important;
 }
 
 .header-area .main-nav .nav {
-  display: block;
   float: right;
   margin-top: 30px;
   margin-right: 0px;
