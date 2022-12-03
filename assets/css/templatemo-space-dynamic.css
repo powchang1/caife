@@ -375,7 +375,7 @@ header
 }
 
 .header-area .main-nav .nav li a {
-  display: flex;
+  display: block;
   font-weight: 500;
   font-size: 15px;
   color: #2a2a2a;
