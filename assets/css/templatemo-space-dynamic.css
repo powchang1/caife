@@ -265,14 +265,17 @@ header
 
 .background-header .logo,
 .background-header .main-nav .nav li a {
+  display: flex;
   color: #1e1e1e!important;
 }
 
 .background-header .main-nav .nav li:hover a {
+  display: flex;
   color: #fe3f40!important;
 }
 
 .background-header .nav li a.active {
+  display: flex;
   color: #fe3f40!important;
 }
 
@@ -291,6 +294,7 @@ header
 }
 
 .header-area .main-nav {
+  display: flex;
   min-height: 80px;
   background: transparent;
 }
@@ -311,6 +315,7 @@ header
 }
 
 .header-area .main-nav .logo h4 {
+    display: flex;
     font-size: 24px;
     font-weight: 700;
     text-transform: uppercase;
@@ -329,14 +334,17 @@ header
 }
 
 .background-header .main-nav .logo h4 {
+  display: flex;
   line-height: 100px;
 }
 
 .background-header .main-nav .nav {
+  display: flex;
   margin-top: 20px !important;
 }
 
 .header-area .main-nav .nav {
+  display: flex;
   float: right;
   margin-top: 30px;
   margin-right: 0px;
@@ -372,7 +380,7 @@ header
 }
 
 .header-area .main-nav .nav li a {
-  display: block;
+  display: flex;
   font-weight: 500;
   font-size: 15px;
   color: #2a2a2a;
