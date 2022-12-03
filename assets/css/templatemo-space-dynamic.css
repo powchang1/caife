@@ -526,7 +526,7 @@ header
   transition: all 0.4s;
   background-color: #1e1e1e;
   display: block;
-  position: absolute;
+  position: relative;
   width: 30px;
   height: 2px;
   left: 0;
