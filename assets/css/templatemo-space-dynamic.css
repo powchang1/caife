@@ -265,17 +265,14 @@ header
 
 .background-header .logo,
 .background-header .main-nav .nav li a {
-  display: flex;
   color: #1e1e1e!important;
 }
 
 .background-header .main-nav .nav li:hover a {
-  display: flex;
   color: #fe3f40!important;
 }
 
 .background-header .nav li a.active {
-  display: flex;
   color: #fe3f40!important;
 }
 
@@ -294,13 +291,11 @@ header
 }
 
 .header-area .main-nav {
-  display: flex;
   min-height: 80px;
   background: transparent;
 }
 
 .header-area .main-nav .logo {
-  display: flex;
   line-height: 100px;
   color: #fff;
   font-size: 24px;
