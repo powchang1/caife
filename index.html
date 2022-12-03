@@ -408,11 +408,11 @@
                         <img src="assets/images/caife_chatbot_logical_flow.png" class="w-100" alt="architecture">
                     </div>
                 </div>
-                <div class="col-md-5">
-                    <h4 class="title mb-3">How do the various pieces of code come together to generate a response?</h4>
+                <div class="col-md-6">
+                    <h3 class="title mb-3">How do the various pieces of code come together to generate a response?</h3>
                     
-                    <p>First the user input needs to be tokenized to find intents and slots. For this, we use a JointBERT model which does two classifications - one for intent and other for slots. Intent classification is done using CLS token based on the entire sentence. For each token output, a classifier is run to classify token into one of the slots. </p><br/>
-                    <p>The state tracker collects all slots generated in a conversation. It has a defined sequence of slots for an intent. Based on the available slots, predefined sequence and business database, it generates a response asking for the next slot in sequence. This response goes back to the user.</p>
+                    <p style="font-size: large">First the user input needs to be tokenized to find intents and slots. For this, we use a JointBERT model which does two classifications - one for intent and other for slots. Intent classification is done using CLS token based on the entire sentence. For each token output, a classifier is run to classify token into one of the slots. </p><br/>
+                    <p style="font-size: large">The state tracker collects all slots generated in a conversation. It has a defined sequence of slots for an intent. Based on the available slots, predefined sequence and business database, it generates a response asking for the next slot in sequence. This response goes back to the user.</p>
                 </div>
             </div><!-- End of Row -->           
         </div><!-- End of Container-->      
@@ -431,11 +431,11 @@
         <div class="container">
             <!-- Row -->
             <div class="row justify-content-between align-items-center">                
-                <div class="col-md-5">
-                    <h4 class="title mb-3">System Architecture</h4>
-			<p>There's an offline portion and an online portion. Offline, meta learned models are created for different domains. The model is first trained on high data domains where data is available from Multiwoz. This model is then finetuned on low domain data. In our case, this is synthetically created data and it results in a model that is specific to a particular domain. Many such models could be created, one each for a domain.</p>
+                <div class="col-md-6">
+                    <h3 class="title mb-3">System Architecture</h3>
+			<p style="font-size: large">There's an offline portion and an online portion. Offline, meta learned models are created for different domains. The model is first trained on high data domains where data is available from Multiwoz. This model is then finetuned on low domain data. In our case, this is synthetically created data and it results in a model that is specific to a particular domain. Many such models could be created, one each for a domain.</p>
 			<br/>
-			<p>When user comes to Caife website, they specify a domain which in turn selects a particular model. This model can be combined with State tracker and response generator to create a business specific URL. The URL is sent to customer via email. The URL can be incorporated in customer's website as a chatbot. The chatbot will run on Caife servers and each business will have a different URL.
+			<p style="font-size: large">When user comes to Caife website, they specify a domain which in turn selects a particular model. This model can be combined with State tracker and response generator to create a business specific URL. The URL is sent to customer via email. The URL can be incorporated in customer's website as a chatbot. The chatbot will run on Caife servers and each business will have a different URL.
 </p>
 <!--                     <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur, amet!</p> -->
 <!--                     <button class="btn btn-outline-primary btn-sm">Learn More</button> -->
