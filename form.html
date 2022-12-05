@@ -211,7 +211,7 @@
 			 <div id="steps-container">
             <div class="step">
 		    <h4>What is your <span class="highlight hllight">domain / business</span>?</h4>
-		    <small id="note" class="form-text text-muted">Its your main business for which you want to leverage CAiFE chatbot. e.g. restaurant, clinic, hair-saloon.<br></small>
+		    <small id="note" class="form-text text-success">Its your main business for which you want to leverage CAiFE chatbot. e.g. restaurant, clinic, hair-saloon.<br></small>
                <div class="form-check ps-0 q-box">
 		      
 		  <div class="q-box__question">
@@ -242,7 +242,7 @@
             </div>
             <div class="step">
 		    <h4>What actions you want the Chatbot to handle?</h4>
-		     <small id="note" class="form-text text-muted">Actions are workflows that defines your business needs. For example, a restaurant may have "book a table" as an action that a chatbot can assist with.</small>
+		     <small id="note" class="form-text text-success">Actions are workflows that defines your business needs. For example, a restaurant may have "book a table" as an action that a chatbot can assist with.</small>
 		 
 		    <div class="form-check ps-0 q-box">
                   <div class="q-box__question">
@@ -273,32 +273,35 @@
             </div>
             
 		<div class="step">
-		    <h4>What key  <span class="highlight hlorange">business information</span> you expect chatbot to share?</h4>
-	       <small id="note" class="form-text text-muted">These are key pieces of information about your business that you expect chatbot to share with customers when requested during the chat, such as hours of operation, days open, address etc.<br></small>
+		    <h4>What are the details the chatbot has to collect in the workflows selected?</h4>
+	       <small id="note" class="form-text text-success">Each workflow requires the chatbot to collect various key information, such as name and number of people for reserving a table.</small>
 		
 		<div class="form-check ps-0 q-box">
 				
                   <div class="q-box__question">
-                     <input class="form-check-input question__input" id="q_3_address" name="q_3" type="checkbox" value="Business address"> 
-                     <label class="form-check-label question__label" for="q_3_address">Business address</label>
+                     <input class="form-check-input question__input" id="q_3_type" name="q_3" type="checkbox" value="Type"> 
+                     <label class="form-check-label question__label" for="q_3_type">Type</label>
                   </div>
                   <div class="q-box__question">
-                     <input class="form-check-input question__input" id="q_3_phone_number" name="q_3" type="checkbox" value="Phone number"> 
-                     <label class="form-check-label question__label" for="q_3_phone_number">Business phone number</label>
+                     <input class="form-check-input question__input" id="q_3_number_people" name="q_3" type="checkbox" value="Number of People"> 
+                     <label class="form-check-label question__label" for="q_3_number_people">Number of people</label>
                   </div>
 		  <div class="q-box__question">
-                     <input class="form-check-input question__input" id="q_3_email_address" name="q_3" type="checkbox" value="Email address"> 
-                     <label class="form-check-label question__label" for="q_3_email_address">Business email address</label>
+                     <input class="form-check-input question__input" id="q_3_booking_day" name="q_3" type="checkbox" value="Booking day"> 
+                     <label class="form-check-label question__label" for="q_3_booking_day">Booking day</label>
                   </div>
 		   <div class="q-box__question">
-                     <input class="form-check-input question__input" id="q_3_operating_days" name="q_3" type="checkbox" value="Operating days"> 
-                     <label class="form-check-label question__label" for="q_3_operating_days">Operating days</label>
+                     <input class="form-check-input question__input" id="q_3_booking_time" name="q_3" type="checkbox" value="Booking time"> 
+                     <label class="form-check-label question__label" for="q_3_booking_time">Booking time</label>
                   </div>
-		       <div class="q-box__question">
-                     <input class="form-check-input question__input" id="q_3_hours_operations" name="q_3" type="checkbox" value="Hours of operations"> 
-                     <label class="form-check-label question__label" for="q_3_hours_operations">Hours of operations</label>
+		  <div class="q-box__question">
+                     <input class="form-check-input question__input" id="q_3_area" name="q_3" type="checkbox" value="Area"> 
+                     <label class="form-check-label question__label" for="q_3_area">Area (location within city)</label>
                   </div>
-
+		  <div class="q-box__question">
+                     <input class="form-check-input question__input" id="q_3_price" name="q_3" type="checkbox" value="Price range"> 
+                     <label class="form-check-label question__label" for="q_3_price">Price range (of service offered)</label>
+                  </div>
 		  <div class="q-box__question">
 		     <input class="form-check-input question__input" id="q_3_others" name="q_3" type="checkbox" value="Others"> 
                      <label class="form-check-label question__label" for="q_3_others">Other [Please Specify]</label>
@@ -307,13 +310,57 @@
 <!-- 		     <input class="form-check-input" id="other_slots" type="text" placeholder="Enter other slots"> -->
 <!-- 	             <label class="form-check-label question__label" for="q_3_other_slots">Other slots</label> -->
                   </div>
+		      
+               </div>
+            </div>
+				 
+		<div class="step">
+		    <h4>What are the static information you want the chatbot to know?</h4>
+	       <small id="note" class="form-text text-success">Static information is details like the hours of operation and the address a customer may like to know.</small>
+		
+		<div class="form-check ps-0 q-box">
+				
+                  <div class="q-box__question">
+                     <input class="form-check-input question__input" id="q_4_name" name="q_4" type="checkbox" value="Name"> 
+                     <label class="form-check-label question__label" for="q_4_name">Name</label>
+                  </div>
+                  <div class="q-box__question">
+                     <input class="form-check-input question__input" id="q_4_address" name="q_4" type="checkbox" value="Address"> 
+                     <label class="form-check-label question__label" for="q_4_address">Address</label>
+                  </div>
+		  <div class="q-box__question">
+                     <input class="form-check-input question__input" id="q_4_phone_number" name="q_4" type="checkbox" value="Phone number"> 
+                     <label class="form-check-label question__label" for="q_4_phone_number">Phone number</label>
+                  </div>
+		   <div class="q-box__question">
+                     <input class="form-check-input question__input" id="q_4_postal_code" name="q_4" type="checkbox" value="Postal code"> 
+                     <label class="form-check-label question__label" for="q_4_postal_code">Postal code</label>
+                  </div>
+		  <div class="q-box__question">
+                     <input class="form-check-input question__input" id="q_4_operating_days" name="q_4" type="checkbox" value="Operating days"> 
+                     <label class="form-check-label question__label" for="q_4_operating_days">Operating days</label>
+                  </div>
+		  <div class="q-box__question">
+                     <input class="form-check-input question__input" id="q_4_operating_hours" name="q_4" type="checkbox" value="Operating hours"> 
+                     <label class="form-check-label question__label" for="q_4_operating_hours">Operating hours</label>
+                  </div>
+		  <div class="q-box__question">
+		     <input class="form-check-input question__input" id="q_4_others" name="q_3" type="checkbox" value="Others"> 
+                     <label class="form-check-label question__label" for="q_4_others">Other [Please Specify]</label>
+		     <input class="question input" type="text" placeholder="Others" id="others_0">
+	       	    
+<!-- 		     <input class="form-check-input" id="other_slots" type="text" placeholder="Enter other slots"> -->
+<!-- 	             <label class="form-check-label question__label" for="q_3_other_slots">Other slots</label> -->
+                  </div>
 		
 		      
                </div>
-            </div>		 
+            </div>			 
+				 
+				 
             <div class="step">
                <h4>Provide us with your business information:</h4>
-		<small id="note" class="form-text text-muted">Information about your business.<br></small>
+		<small id="note" class="form-text text-success">Information about your business.</small>
 		   
 		    <div class="mt-2">
                   <label class="form-label">Your Name:</label> 
